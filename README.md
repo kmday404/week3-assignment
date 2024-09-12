@@ -2,7 +2,7 @@
 
 This is a walking skeleton for a cookie clicker template.
 
-##Required
+## Required
 
 - What requirements did you achieve?
 - Were there any requirements or goals that you were unable to achieve?
