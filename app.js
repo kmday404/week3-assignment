@@ -29,3 +29,17 @@ function handleCounting() {
   cookieCountContainer.textContent = `Cookies Count: ${cookieCount}`;
 }
 myCookieButton.addEventListener("click", handleCounting);
+
+setInterval(function () {
+  //if (no shop upgrades owned; )
+  cookiesPerSecond = cookieCount + 1;
+  // if (shop upgrade 1 owned; then cookiesPerSecond increase by this much )
+  // if (shop2 owned, CPS increase again)
+  updateCookieCount();
+}, 1000);
+
+function updateCookieCount(a, b) {
+  return cookieCount + cookiesPerSecond;
+}
+
+console.log(updateCookieCount);
