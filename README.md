@@ -7,7 +7,7 @@ This is a walking skeleton for a cookie clicker template.
 - What requirements did you achieve?
 - Were there any requirements or goals that you were unable to achieve?
 - If so, what was it that you found difficult about these tasks?
-  ##Optional
+  ## Optional
 - Feel free to add any other reflections you would like to share about your submission, for example:
 
 Requesting feedback about a specific part of your submission.
@@ -15,7 +15,7 @@ What useful external sources helped you complete the assignment (e.g YouTube tut
 What errors or bugs did you encounter while completing your assignment? How did you solve them?
 What went really well and what could have gone better?
 
-##Requirements
+## Requirements
 
 - Fetch upgrade data from the provided API and at least one upgrade from the API update the cookie count.
 - Ensure that functions are used effectively to keep code organised and reusable.
@@ -24,7 +24,7 @@ What went really well and what could have gone better?
 - Use setInterval to increment the cookie count and manage the game state each second.
   Managing the game state includes saving progress and updating the DOM.
 
-##Stretch Requirements
+## Stretch Requirements
 
 - Consolidate upgrade management by managing all upgrades in a single function.
 - Improve UX with animations, sound effects, or other visual effects.
