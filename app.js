@@ -34,18 +34,6 @@ function renderShop() {
   });
 }
 
-// function createShopUpgradesList(upgradesContainer);
-// {
-//   shopUpgrades.forEach(function (list, index) {
-//     let shopUpgrade = document.createElement("p");
-//     shopUpgrade.name = shopUpgrades[index].name;
-
-//     upgradesContainer.appendChild(shopUpgrade);
-//     //className?
-//   });
-// }
-// createShopUpgradesList(upgradesContainer);
-
 function handleCounting() {
   cookieCount = cookieCount + 1;
   console.log(cookieCount);
@@ -54,7 +42,7 @@ function handleCounting() {
 myCookieButton.addEventListener("click", handleCounting);
 
 setInterval(function () {
-  //if (no shopUpgrades ; cookiesPerSecond =  1 )
+  //if (no shopUpgrades ; cookiesPerSecond increases by  1 )
   // if (shop upgrade 1 owned; then cookiesPerSecond increase by this much )
   // if (shop2 owned, CPS increase again)
 
