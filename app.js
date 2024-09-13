@@ -42,13 +42,23 @@ function handleCounting() {
 myCookieButton.addEventListener("click", handleCounting);
 
 setInterval(function () {
-  //if (no shopUpgrades ; cookiesPerSecond increases by  1 )
-  // if (shop upgrade 1 owned; then cookiesPerSecond increase by this much )
-  // if (shop2 owned, CPS increase again)
-
-  cookieCount + cookiesPerSecond;
+  cookiesPerSecond++;
+  //cookiesPerSecondContainer.innerHTML =
+  cookiesPerSecondContainer.textContent = `Cookies per Second: ${cookiesPerSecond}`;
+  updateDisplay(cookieCount, cookiesPerSecond);
 }, 1000);
 
+function updateDisplay(a, b) {
+  return a + b;
+}
+updateDisplay(cookieCount, cookiesPerSecond);
+
+//if (no shopUpgrades ; cookiesPerSecond increases by  1 )
+// if (shop upgrade 1 owned; then cookiesPerSecond increase by this much )
+// if (shop2 owned, CPS increase again)
+//console.log("count");
+
 //value of CPS changes when you buy something in the shop
-//the value of cookie count increases by the value of CPS every second
-//
+//the value of cookie count increases by the value of CPS every second -- every second, it increases cookieCount by the value of cookiesPerSecond and updates the display.
+//purchasedUpgrades -- use this to track the number of each upgrade the user as bought
+// handleUpgradesPurchase -- does the user have enough cookies to purchase - if no, display the hidden message
