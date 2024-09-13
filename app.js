@@ -1,9 +1,11 @@
 console.log("test");
 
 let cookieCount = 0;
-cookieCountContainer = document.getElementById("cookies-count");
 let cookiesPerSecond = 0;
-cookiesPerSecondContainer = document.getElementById("cookies-per-second");
+const cookieCountContainer = document.querySelector("#cookies-count");
+const cookiesPerSecondContainer = document.querySelector("#cookies-per-second");
+const upgradeContainer = document.querySelector(".upgrades-container");
+const myCookieButton = document.querySelector("#cookie-button");
 
 let shopUpgrades = [];
 
@@ -11,17 +13,38 @@ async function getUpgrades() {
   const response = await fetch(
     "https://cookie-upgrade-api.vercel.app/api/upgrades"
   );
-  console.log(response);
   const data = await response.json();
+  shopUpgrades = data;
   console.log(data);
-  //const wrangledData = data[0];
-  //return wrangledData;
-  shopUpgrades.push(...data); //reddit and stackoverflow
+  renderShop();
 }
 
 getUpgrades();
 
-const myCookieButton = document.getElementById("cookie-button");
+function renderShop() {
+  shopUpgrades.forEach((item) => {
+    let makeDiv = document.createElement("div");
+    let makeButton = document.createElement("button");
+    makeButton.textContent = "BUY";
+    makeButton.id = `item: ${item.id}`;
+    makeDiv.className = "upgradesDiv";
+    makeDiv.textContent = `${item.name} cost: ${item.cost} increase: ${item.increase}`;
+    upgradeContainer.appendChild(makeDiv);
+    upgradeContainer.appendChild(makeButton);
+  });
+}
+
+// function createShopUpgradesList(upgradesContainer);
+// {
+//   shopUpgrades.forEach(function (list, index) {
+//     let shopUpgrade = document.createElement("p");
+//     shopUpgrade.name = shopUpgrades[index].name;
+
+//     upgradesContainer.appendChild(shopUpgrade);
+//     //className?
+//   });
+// }
+// createShopUpgradesList(upgradesContainer);
 
 function handleCounting() {
   cookieCount = cookieCount + 1;
@@ -31,15 +54,13 @@ function handleCounting() {
 myCookieButton.addEventListener("click", handleCounting);
 
 setInterval(function () {
-  //if (no shop upgrades owned; )
-  cookiesPerSecond = cookieCount + 1;
+  //if (no shopUpgrades ; cookiesPerSecond =  1 )
   // if (shop upgrade 1 owned; then cookiesPerSecond increase by this much )
   // if (shop2 owned, CPS increase again)
-  updateCookieCount();
+
+  cookieCount + cookiesPerSecond;
 }, 1000);
 
-function updateCookieCount(a, b) {
-  return cookieCount + cookiesPerSecond;
-}
-
-console.log(updateCookieCount);
+//value of CPS changes when you buy something in the shop
+//the value of cookie count increases by the value of CPS every second
+//

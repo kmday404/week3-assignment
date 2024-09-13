@@ -1,7 +1,10 @@
 /* @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css"); */
 * {
   background-color: slategrey;
+  box-sizing: border-box;
 }
 #upgrades-container {
   border-style: solid;
+  display: flex;
+  flex-direction: column;
 }
