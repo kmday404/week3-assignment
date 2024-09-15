@@ -4,7 +4,7 @@ This is a walking skeleton for a cookie clicker template.
 
 ## Required
 
-- What requirements did you achieve?
+- What requirements did you achieve?< br / >
   I managed to fetch the API but I haven't tried to update the count with any of the updates.
 - Were there any requirements or goals that you were unable to achieve?
   I could not get my cookies per second to merge with the cookie count itself, it does count and I have displayed this in the cookies per second section but I would have like to have that display the current multipler and the count be one.
