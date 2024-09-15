@@ -10,7 +10,7 @@ This is a walking skeleton for a cookie clicker template.
 
 - Were there any requirements or goals that you were unable to achieve?
 
-  I could not get my cookies per second to merge with the cookie count itself, it does count and I have displayed this in the cookies per second section but I would have like to have that display the current multipler and the count be one.
+  I could not get my cookies per second to merge with the cookie count itself, it does count and I have displayed this in the cookies per second section (because I am proud of it) but I would have liked that to display in the cookie count section and have the cookies per second show the multiper figure.
 
 - If so, what was it that you found difficult about these tasks?
 
@@ -18,12 +18,14 @@ This is a walking skeleton for a cookie clicker template.
 
   ## Optional
 
-- Feel free to add any other reflections you would like to share about your submission, for example:
+- Feel free to add any other reflections you would like to share about your submission.
 
-Requesting feedback about a specific part of your submission.
-What useful external sources helped you complete the assignment (e.g YouTube tutorials)?
-What errors or bugs did you encounter while completing your assignment? How did you solve them?
-What went really well and what could have gone better?
+  Resources used:  
+  mdn web docs, to help with the grid and box-sizing,  
+  I heavily relied on previous class topics and examples,  
+  peer support/review,  
+  ok soo... to plan my inital layout,  
+  YouTube: @WebZoneCode -- reviewed clips about functions and buttons.
 
 ## Requirements
 
