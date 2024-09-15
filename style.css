@@ -20,15 +20,16 @@ body {
   body {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 0.5fr 3fr 0.3fr 0.3fr;
+    grid-template-rows: 0.1fr 3fr 0.3fr 0.3fr;
     padding: 20px;
   }
   h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     grid-column-start: 1;
     grid-column-end: -1;
     text-align: center;
+    top: 0px;
   }
   #cookie-button {
     grid-row-start: 2;
@@ -48,7 +49,7 @@ body {
   .upgradesDiv {
     font-family: monospace;
     font-size: 1rem;
-    height: 50px;
+    height: 20px;
     grid-column-start: 2;
     grid-row-start: 2;
   }
