@@ -71,8 +71,8 @@ setInterval(function () {
 //purchasedUpgrades -- use this to track the number of each upgrade the user as bought
 // handleUpgradePurchase -- does the user have enough cookies to purchase - if no, display the hidden message
 
-const stringifiedData = JSON.stringify(shopUpgrades);
-localStorage.setItem("shopUpgrades", stringifiedData);
+const stringifiedData = JSON.stringify(cookieCount);
+localStorage.setItem("cookieCount", stringifiedData);
 
-const retrievedData = localStorage.getItem("shopUpgrades");
+const retrievedData = localStorage.getItem("cookieCount");
 console.log(retrievedData);
